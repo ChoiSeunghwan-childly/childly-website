@@ -23,6 +23,11 @@
 .banner {
   height: 100vh;
 }
+@media (max-width: 991px) {
+  .banner {
+    height: 25vh;
+  }
+}
 
 .responsive-height {
   height: 650px;
@@ -131,6 +136,15 @@
   height: 160px;
 }
 
+.service-content .miningpullhub {
+}
+
+@media (max-width: 991px) {
+  .service-content .miningpullhub {
+    flex-direction: column-reverse;
+  }
+}
+
 .heading {
   display: block;
   color: #475164;
@@ -197,6 +211,16 @@
   color: #8d71ff;
 }
 
+.history .sub-date {
+  width: 83px;
+  margin-left: 16px;
+  margin-right: 4px;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #8d71ff;
+}
+
 .history .date::after {
   content: " ";
   background: #8d71ff;
@@ -209,13 +233,25 @@
 }
 
 .history .item {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   margin: 32px auto;
   line-height: 34px;
 }
 
+.history .sub-item {
+  font-size: 12px;
+  font-weight: 400;
+  margin: 0px auto;
+  line-height: 16px;
+}
+
 .history .event {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.history .sub-event {
   display: inline-block;
   vertical-align: top;
 }
@@ -224,8 +260,13 @@
   justify-content: center;
 }
 
-.history .img {
+.history .img1 {
   width: 100px;
+  margin: 0 20px;
+}
+
+.history .img2 {
+  width: 134px;
   margin: 0 20px;
 }
 
@@ -260,11 +301,13 @@
   margin: auto 0 0 0;
 }
 
+.map-frame {
+  text-align: center;
+}
 
 .footer .information {
   font-size: 14px;
 }
-
 
 /* ---- grid ---- */
 
