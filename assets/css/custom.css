@@ -70,21 +70,21 @@
   display: flex;
 }
 
-.career-content .highlight {
+.careers-content .highlight {
   font-weight: bold;
 }
 
-.career-content .text {
+.careers-content .text {
   font-size: 18px;
   font-weight: 400;
   display: contents;
 }
 
-.career-content .keyword {
+.careers-content .keyword {
   margin: 0 80px;
 }
 
-.career-content .apply-frame {
+.careers-content .apply-frame {
   display: flex;
   justify-content: center;
   margin: 20px 0;
@@ -93,7 +93,7 @@
 .apply-btn {
   height: 40px;
   width: 30%;
-  color: #fff;
+  color: #fff !important;
   cursor: pointer;
   font-size: 15px;
   font-weight: 400;
@@ -125,6 +125,10 @@
 
 .service-content .text {
   margin-top: 15px;
+}
+
+.service-content .service-img {
+  height: 160px;
 }
 
 .heading {
