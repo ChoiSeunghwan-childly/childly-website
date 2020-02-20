@@ -20,6 +20,10 @@
   width: 100% !important;
 }
 
+.banner {
+  height: 100vh;
+}
+
 .responsive-height {
   height: 650px;
 }
@@ -187,13 +191,11 @@
   margin: 0 20px;
 }
 
-body { font-family: sans-serif; }
+
 
 /* ---- grid ---- */
 
 .grid {
-  background: #EEE;
-  max-width: 1200px;
 }
 
 /* clearfix */
@@ -206,13 +208,9 @@ body { font-family: sans-serif; }
 /* ---- grid-item ---- */
 
 .grid-item {
-  width: 160px;
-  height: 120px;
+  width: 50%;
   float: left;
-  background: #D26;
-  border: 2px solid #333;
   border-color: hsla(0, 0%, 0%, 0.5);
-  border-radius: 5px;
 }
 
 .grid-item--width2 { width: 320px; }
