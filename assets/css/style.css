@@ -213,7 +213,7 @@ p {
 .section-title .title {
   font-size: 18px;
   padding-top: 10px;  
-  line-height: 42px;
+  line-height: 32px;
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .section-title .title {
@@ -605,6 +605,7 @@ p {
 
 .sticky {
   position: fixed;
+  background: #fff;
   z-index: 99;
   -webkit-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
   -moz-box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.05);
@@ -1336,7 +1337,7 @@ p {
 }
 @media only screen and (min-width: 1921px) {
   .footer-area::before {
-    height: 1120px;
+    /* height: 1120px; */
   }
 }
 
