@@ -927,11 +927,11 @@ p {
 .header-hero-content {
   padding-top: 50%;
 }
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
   .header-hero-content {
     padding-top: 145px;
   }
-}
+} */
 .header-hero-content .header-sub-title {
   font-size: 22px;
   font-weight: 300;
@@ -1005,17 +1005,17 @@ p {
 }
 @media (max-width: 767px) {
   .single-logo {
-    padding: 0 15px;
+    padding: 0 2px;
   }
 }
 @media (max-width: 767px) {
   .single-logo {
-    width: 50%;
+    width: 20%;
   }
 }
 @media only screen and (min-width: 576px) and (max-width: 767px) {
   .single-logo {
-    width: 33.33%;
+    width: 20%;
   }
 }
 .single-logo img {

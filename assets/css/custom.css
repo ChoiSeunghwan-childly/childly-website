@@ -23,11 +23,11 @@
 .banner {
   height: 100vh;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .banner {
     height: 25vh;
   }
-}
+} */
 
 .responsive-height {
   height: 650px;
