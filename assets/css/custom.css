@@ -189,7 +189,7 @@
 }
 
 .history .list {
-  width: 530px;
+  display: table;
   margin: 80px auto 22px auto;
   position: relative;
   text-align: left;
