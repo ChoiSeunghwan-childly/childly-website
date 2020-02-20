@@ -29,6 +29,10 @@
   }
 } */
 
+.vh-100 {
+  height: 100vh;
+}
+
 .responsive-height {
   height: 650px;
 }
@@ -87,6 +91,24 @@
 
 .careers-content .keyword {
   margin: 0 80px;
+}
+
+@media (max-width: 767px) {
+  .careers-content .keyword {
+    margin: 0 20px;
+  }
+}
+
+@media (max-width: 366px) {
+  .careers-content .keyword {
+    margin: 0 10px;
+  }
+}
+
+@media (max-width: 330px) {
+  .careers-content .keyword {
+    margin: 5px 10px;
+  }
 }
 
 .careers-content .apply-frame {
@@ -301,50 +323,14 @@
   margin: auto 0 0 0;
 }
 
+.gallery-content img {
+  max-width: 65%;
+}
+
 .map-frame {
   text-align: center;
 }
 
 .footer .information {
   font-size: 14px;
-}
-
-/* ---- grid ---- */
-
-.grid {
-}
-
-/* clearfix */
-.grid:after {
-  content: "";
-  display: block;
-  clear: both;
-}
-
-/* ---- grid-item ---- */
-
-.grid-item {
-  width: 50%;
-  float: left;
-  border-color: hsla(0, 0%, 0%, 0.5);
-}
-
-.grid-item--width2 {
-  width: 320px;
-}
-.grid-item--width3 {
-  width: 480px;
-}
-.grid-item--width4 {
-  width: 640px;
-}
-
-.grid-item--height2 {
-  height: 200px;
-}
-.grid-item--height3 {
-  height: 260px;
-}
-.grid-item--height4 {
-  height: 360px;
 }
