@@ -263,7 +263,8 @@
 }
 
 .history .v-line {
-  height: 97.5%;
+  height: 80%;
+  top: -20px;
   position: absolute;
   width: 2px;
   background-color: rgb(141, 113, 255, 0.7);
@@ -273,17 +274,10 @@
 }
 
 .history .list {
-  display: table;
   margin: 80px auto 22px auto;
   position: relative;
   text-align: left;
-  left: 44px;
-}
-
-@media (max-width: 575px) {
-  .history .list {
-    left: 0px;
-  }
+  display: table;
 }
 
 .history .date {
@@ -307,7 +301,7 @@
 }
 
 .history .sub-date {
-  width: 77.75px;
+  width: 77px;
   margin-left: 22px;
   margin-right: 22px;
   display: inline-flex;
@@ -328,7 +322,7 @@
 }
 
 .history .item {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   margin: 12px auto;
   line-height: 34px;
@@ -353,7 +347,6 @@
 
 .history .img-frame {
   justify-content: center;
-  margin-right: 272px;
 }
 
 .history .img1 {
