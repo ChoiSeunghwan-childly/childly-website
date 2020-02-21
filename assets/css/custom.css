@@ -1,3 +1,11 @@
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
 .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
@@ -8,8 +16,9 @@
   max-width: 50%;
 }
 
-.vh-100 {
+.section-vh {
   height: 100vh;
+  min-height: 756px;
 }
 
 .flex-center {
@@ -30,6 +39,13 @@
 
 .banner {
   height: 100vh;
+}
+
+.banner .center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
 }
 /* @media (max-width: 991px) {
   .banner {
@@ -64,18 +80,10 @@
 
 .next-btn {
   width: 16px;
+  text-align: center;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
   left: 50%;
-}
-
-.responsive-height {
-  height: 650px;
-}
-@media (max-width: 767px) {
-  .responsive-height {
-    height: 440px;
-  }
 }
 
 .more-info {
@@ -110,9 +118,13 @@
 }
 
 .more {
-  width: 20px;
+  width: 14px;
   margin: 15px auto 0px;
   display: flex;
+}
+
+.careers-content {
+  position: relative;
 }
 
 .careers-content .highlight {
@@ -183,10 +195,21 @@
   background-position: right center;
 }
 
+.service-content {
+  position: relative;
+}
+
 .service-content .title {
-  font-size: 14px;
+  font-size: 16px;
   padding-top: 10px;
   line-height: 32px;
+}
+
+@media (max-width: 991px) {
+  .service-content .title {
+    font-size: 14px;
+    line-height: 26px;
+  }
 }
 
 .service-content .service-text {
@@ -205,6 +228,7 @@
 .service-content .service-img-miningpullhub {
   height: 120px;
   margin-top: 35px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
 .service-content .service-text-dovewallet {
@@ -218,17 +242,34 @@
 .service-content .miningpullhub {
 }
 
+.service-content .section-sub-miningpullhub {
+  justify-content: space-evenly;
+}
+
+.press-content {
+  position: relative;
+}
+
+.section-miningpullhub {
+  padding-top: 40px;
+}
+
 @media (max-width: 991px) {
   .service-content .miningpullhub {
     flex-direction: column-reverse;
   }
+  .section-miningpullhub {
+    padding-top: 0px;
+  }
 }
+
+
 
 .heading {
   position: absolute;
   display: block;
   text-align: center;
-  top: 104px;
+  top: 70px;
   width: 100%;
 }
 
@@ -260,6 +301,10 @@
 
 .logo {
   width: 96px;
+}
+
+.history-section {
+  position: relative;
 }
 
 .history .v-line {
@@ -360,6 +405,7 @@
 }
 
 .gallery-content {
+  position: relative;
   width: 100%;
 }
 
@@ -395,10 +441,14 @@
   max-width: 65%;
 }
 
+.contact-content {
+  position: relative;
+}
+
 .map-frame {
   text-align: center;
 }
 
 .footer .information {
-  font-size: 14px;
+  font-size: 12px;
 }

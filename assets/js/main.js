@@ -27,6 +27,8 @@ $(function () {
     //===== Section Menu Active
 
     var scrollLink = $('.page-scroll');
+    var pagerLink = $('pager');
+
     // Active link switching
     $(window).scroll(function () {
         var scrollbarLocation = $(this).scrollTop();
@@ -40,6 +42,15 @@ $(function () {
                 $(this).parent().siblings().removeClass('active');
             }
         });
+
+        // pagerLink.each(function () {
+        //     var sectionOffset = $(this.hash).offset().top - 73;
+
+        //     if (sectionOffset <= scrollbarLocation) {
+        //         $(this).parent().addClass('active');
+        //         $(this).parent().siblings().removeClass('active');
+        //     }
+        // })
     });
 
 
@@ -64,13 +75,13 @@ $(function () {
     //===== Back to top
 
     // Show or hide the sticky footer button
-    $(window).on('scroll', function (event) {
-        if ($(this).scrollTop() > 600) {
-            $('.back-to-top').fadeIn(200)
-        } else {
-            $('.back-to-top').fadeOut(200)
-        }
-    });
+    // $(window).on('scroll', function (event) {
+    //     if ($(this).scrollTop() > 600) {
+    //         $('.back-to-top').fadeIn(200)
+    //     } else {
+    //         $('.back-to-top').fadeOut(200)
+    //     }
+    // });
 
 
     //Animate the scroll to yop
