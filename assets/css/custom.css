@@ -24,6 +24,10 @@
   width: 100% !important;
 }
 
+.font-bold {
+  font-weight: bold;
+}
+
 .banner {
   height: 100vh;
 }
@@ -41,7 +45,7 @@
   width: 100px;
   height: 100px;
   padding: 4%;
-  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 1px 2px rgba(0,0,0,.24);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   margin-left: auto;
   margin-right: auto;
   -webkit-border-radius: 4px;
@@ -49,7 +53,6 @@
   border-radius: 4px;
   background: #fff;
 }
-
 
 .section-wrapper {
   position: relative;
@@ -181,13 +184,9 @@
 }
 
 .service-content .title {
-  font-size: 16px;
+  font-size: 14px;
   padding-top: 10px;
   line-height: 32px;
-}
-
-.service-content .heading-text {
-  margin-top: 15px;
 }
 
 .service-content .service-text {
@@ -199,11 +198,13 @@
 }
 
 .service-content .service-img-dovewallet {
-  height: 160px;
+  height: 120px;
+  width: 70%;
 }
 
 .service-content .service-img-miningpullhub {
-  height: 160px;
+  height: 120px;
+  margin-top: 35px;
 }
 
 .service-content .service-text-dovewallet {
@@ -224,9 +225,11 @@
 }
 
 .heading {
+  position: absolute;
   display: block;
   text-align: center;
-  margin: 0px 0px 20px 0px;
+  top: 104px;
+  width: 100%;
 }
 
 .heading .text {
@@ -304,7 +307,7 @@
 }
 
 .history .sub-date {
-  width: 78px;
+  width: 77.75px;
   margin-left: 22px;
   margin-right: 22px;
   display: inline-flex;
@@ -316,8 +319,8 @@
 .history .sub-date::after {
   content: " ";
   background: #8d71ff;
-  width: 10px;
-  height: 10px;
+  width: 8px;
+  height: 8px;
   border-radius: 10px;
   display: inline-block;
   transform: translate3d(0, -2px, 0);
