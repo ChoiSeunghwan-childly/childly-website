@@ -20,18 +20,37 @@ $(document).ready(function() {
   });
 });
 
+function onClickBackModal() {
+  var modalElement = document.getElementById("back-modal");
+  var element1 = document.getElementById("service-minigpoolhub-more-info");
+  var element2 = document.getElementById("service-dovewallet-more-info");
+  var element3 = document.getElementById("sub-menu-bar");
+
+  element1.classList.remove("show");
+  element2.classList.remove("show");
+  element3.classList.remove("show");
+  modalElement.classList.remove("on");
+}
+
+function onBackModal() {
+  var modalElement = document.getElementById("back-modal");
+  modalElement.classList.add("on");
+}
+
 function subMenuToggle() {
   var element = document.getElementById("sub-menu-bar");
-  console.log(element);
   element.classList.toggle("show");
+  onBackModal();
 }
 
 function dovewalletMoreInfoToggle() {
   var element = document.getElementById("service-dovewallet-more-info");
   element.classList.toggle("show");
+  onBackModal();
 }
 
 function minigpoolhubMoreInfoToggle() {
   var element = document.getElementById("service-minigpoolhub-more-info");
   element.classList.toggle("show");
+  onBackModal();
 }
