@@ -25,32 +25,19 @@ $(function () {
 
 
     //===== Section Menu Active
-
     var scrollLink = $('.page-scroll');
-    var pagerLink = $('pager');
 
     // Active link switching
     $(window).scroll(function () {
         var scrollbarLocation = $(this).scrollTop();
-
-        scrollLink.each(function () {
-
-            var sectionOffset = $(this.hash).offset().top - 73;
-
+        scrollLink.each(function () {            
+            var tag = this.hash.replace('#', '');            
+            var sectionOffset = document.querySelector(`.${tag}`).offsetTop;
             if (sectionOffset <= scrollbarLocation) {
                 $(this).parent().addClass('active');
                 $(this).parent().siblings().removeClass('active');
             }
         });
-
-        // pagerLink.each(function () {
-        //     var sectionOffset = $(this.hash).offset().top - 73;
-
-        //     if (sectionOffset <= scrollbarLocation) {
-        //         $(this).parent().addClass('active');
-        //         $(this).parent().siblings().removeClass('active');
-        //     }
-        // })
     });
 
 

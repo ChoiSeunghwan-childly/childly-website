@@ -5,6 +5,7 @@ $(document).ready(function() {
       autoScrolling: true,
       scrollHorizontally: true,
       scrollBar: true,
+      anchors: ['home', 'service', 'press','history', 'gallery', 'careers', 'contact'],
       lazyLoading: true
   });
 });
