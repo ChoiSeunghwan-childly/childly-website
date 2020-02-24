@@ -351,6 +351,7 @@
 
 .history .date {
   width: 100px;
+  padding-left: 22px;
   margin-right: 19px;
   display: inline-flex;
   justify-content: space-between;
@@ -448,6 +449,7 @@
 
   .history .date {
     width: 56px;
+    padding-left: 0px;
     margin-right: 4px;
   }
 
