@@ -199,6 +199,12 @@
   position: relative;
 }
 
+@media (max-width: 575px) {
+  .service-content .container {
+    padding-top: 40px;
+  }
+}
+
 .service-content .title {
   font-size: 16px;
   padding-top: 10px;
@@ -209,6 +215,13 @@
   .service-content .title {
     font-size: 14px;
     line-height: 26px;
+  }
+}
+
+@media (max-width: 575px) {
+  .service-content .title {
+    font-size: 13px;
+    line-height: 19px;
   }
 }
 
@@ -243,7 +256,14 @@
 }
 
 .service-content .section-sub-miningpullhub {
+  margin-top: 30px;
   justify-content: space-evenly;
+}
+
+@media (max-width: 575px) {
+  .service-content .section-sub-miningpullhub {
+    margin-top: 15px;
+  }
 }
 
 .press-content {
@@ -262,8 +282,6 @@
     padding-top: 0px;
   }
 }
-
-
 
 .heading {
   position: absolute;
@@ -286,6 +304,12 @@
   background-color: #cbcdd3;
   margin: 0px auto;
   margin-bottom: 50px;
+}
+
+@media (max-width: 575px) {
+  .heading-line {
+    margin-bottom: 15px;
+  }
 }
 
 .heading-line::after {
@@ -402,6 +426,36 @@
 .history .img2 {
   width: 134px;
   margin: 0 20px;
+}
+
+@media (max-width: 575px) {
+  .history .item {
+    font-size: 11px;
+    line-height: 28px;
+  }
+
+  .history .sub-item {
+    font-size: 11px;
+  }
+
+  .heading-line {
+    margin-bottom: 15px;
+  }
+
+  .history .v-line {
+    left: 49px;
+  }
+
+  .history .date {
+    width: 56px;
+    margin-right: 4px;
+  }
+
+  .history .sub-date {
+    width: 52px;
+    margin-left: 2px;
+    margin-right: 6px;
+  }
 }
 
 .gallery-content {
