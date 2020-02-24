@@ -20,6 +20,12 @@ $(document).ready(function() {
   });
 });
 
+function subMenuToggle() {
+  var element = document.getElementById("sub-menu-bar");
+  console.log(element);
+  element.classList.toggle("show");
+}
+
 function dovewalletMoreInfoToggle() {
   var element = document.getElementById("service-dovewallet-more-info");
   element.classList.toggle("show");

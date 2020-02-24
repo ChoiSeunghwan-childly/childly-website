@@ -112,7 +112,6 @@ p {
 }
 
 
-/*===== All SECTION TITLE Style =====*/
 .section-title .line {
   background: -webkit-linear-gradient(#708fff 0%, #8d70ff);
   background: -o-linear-gradient(#708fff 0%, #8d70ff);
@@ -128,7 +127,6 @@ p {
   }
 }
 
-/*===== All Section Title Style =====*/
 .section-title .sub-title {
   font-size: 18px;
   font-weight: 400;
@@ -239,6 +237,15 @@ p {
   -o-transform: rotate(135deg);
   transform: rotate(135deg);
   top: -7px;
+}
+
+.sub-menu-bar {
+  background-color: #fff;
+  display: none;
+}
+
+.sub-menu-bar.show {
+  display: unset;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
@@ -479,7 +486,6 @@ p {
   color: #361cc1;
 }
 
-/*===== HEADER HERO =====*/
 .header-hero {
   position: relative;
   z-index: 5;
@@ -539,9 +545,6 @@ p {
   }
 }
 
-/*===========================
-      03.BRAND css 
-===========================*/
 @media (max-width: 767px) {
   .brand-logo {
     -ms-flex-wrap: wrap;
@@ -674,7 +677,6 @@ p {
   color: #fe8464;
 }
 
-/*===== BACK TO TOP =====*/
 .back-to-top {
   font-size: 20px;
   position: fixed;
