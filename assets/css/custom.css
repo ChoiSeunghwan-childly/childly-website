@@ -268,11 +268,9 @@
   }
 }
 
-
-
 .service-content .service-img-miningpullhub {
-  height: 120px;
-  margin-top: 35px;
+  height: 135px;
+  margin-top: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -303,7 +301,6 @@
 }
 
 .section-miningpullhub {
-  padding-top: 40px;
 }
 
 @media (max-width: 991px) {
@@ -331,7 +328,7 @@
 .heading-line {
   display: block;
   width: 30%;
-  height: 1px;
+  height: 2px;
   position: relative;
   background-color: #cbcdd3;
   margin: 0px auto;
@@ -348,11 +345,20 @@
   content: "";
   position: absolute;
   bottom: 0px;
-  height: 1px;
+  height: 4px;
   width: 20%;
   left: 40%;
   right: 0;
-  background-color: #8e69ff;
+  background-color: #8eca19;
+}
+
+.heading-line::before {
+  height: 1px;
+  width: 100%;
+  display: block;
+  content: "";
+  position: relative;
+  background-color: #8eca19;
 }
 
 .logo {
@@ -364,11 +370,11 @@
 }
 
 .history .v-line {
-  height: 80%;
-  top: -20px;
+  height: 77%;
+  top: 5px;
   position: absolute;
-  width: 2px;
-  background-color: rgb(141, 113, 255, 0.7);
+  width: 3px;
+  background-color: #159300;
   left: 94px;
   border-radius: 3px;
   margin-top: 14px;
@@ -384,40 +390,40 @@
 .history .date {
   width: 100px;
   padding-left: 22px;
-  margin-right: 19px;
+  margin-right: 22px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  color: #8d71ff;
+  color: #8eca19;
 }
 
 .history .date::after {
   content: " ";
-  background: #8d71ff;
+  background: #8eca19;
   width: 10px;
   height: 10px;
-  border-radius: 10px;
+  border-radius: 12px;
   display: inline-block;
   transform: translate3d(0, -2px, 0);
   margin-top: 3px;
 }
 
 .history .sub-date {
-  width: 99px;
+  width: 100px;
   padding-left: 22px;
   margin-right: 22px;
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
-  color: #8d71ff;
+  color: #8eca19;
 }
 
 .history .sub-date::after {
   content: " ";
-  background: #8d71ff;
-  width: 8px;
-  height: 8px;
-  border-radius: 10px;
+  background: #8eca19;
+  width: 10px;
+  height: 10px;
+  border-radius: 12px;
   display: inline-block;
   transform: translate3d(0, -2px, 0);
   margin-top: 3px;
@@ -427,14 +433,14 @@
   font-size: 16px;
   font-weight: 600;
   margin: 12px auto;
-  line-height: 34px;
+  line-height: 22px;
 }
 
 .history .sub-item {
-  font-size: 12px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 600;
   margin: 12px auto;
-  line-height: 16px;
+  line-height: 22px;
 }
 
 .history .event {
@@ -443,6 +449,7 @@
 }
 
 .history .sub-event {
+  font-weight: 400;
   display: inline-block;
   vertical-align: top;
 }
@@ -453,36 +460,39 @@
 
 .history .img1 {
   width: 100px;
-  margin: 0 20px;
+  margin: 0 8px;
 }
 
 .history .img2 {
   width: 134px;
-  margin: 0 20px;
+  margin: 0 8px;
 }
 
 @media (max-width: 767px) {
   .history .item {
     font-size: 15px;
   }
-
+  .history .sub-item {
+    font-size: 15px;
+  }
   .history .date {
     padding-left: 0px;
   }
-
-  .history .sub-item {
+  .history .sub-date {
     padding-left: 0px;
   }
+  
 }
 
 @media (max-width: 575px) {
   .history .item {
     font-size: 11px;
-    line-height: 28px;
+    margin: 6px auto;
   }
 
   .history .sub-item {
     font-size: 11px;
+    margin: 6px auto;
   }
 
   .heading-line {
@@ -490,7 +500,8 @@
   }
 
   .history .v-line {
-    left: 49px;
+    height: 75%;
+    left: 50px;
   }
 
   .history .date {
@@ -500,10 +511,9 @@
   }
 
   .history .sub-date {
-    width: 52px;
-    margin-left: 2px;
+    width: 56px;
     padding-left: 0px;
-    margin-right: 6px;
+    margin-right: 4px;
   }
 }
 
@@ -552,7 +562,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 999;
+  z-index: 30;
   pointer-events: none;
 }
 
