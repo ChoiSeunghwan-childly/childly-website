@@ -17,7 +17,8 @@ $(document).ready(function() {
       "contact",
       "footer"
     ],
-    afterLoad: paint
+    afterLoad: paint,
+    lazyLoading: true
   });
 });
 
