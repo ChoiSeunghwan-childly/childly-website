@@ -14,8 +14,10 @@ $(document).ready(function() {
       "history",
       "gallery",
       "careers",
-      "contact"
-    ]
+      "contact",
+      "footer"
+    ],
+    afterLoad: paint
   });
 });
 
@@ -76,6 +78,7 @@ var paint = function() {
   let height = document.body.scrollHeight;
   let width = document.body.scrollWidth;
 
+  if (canvas.height === height) return;
   canvas.height = height;
   canvas.width = width;
   ctx.clearRect(0, 0, width, height);
@@ -96,5 +99,5 @@ var paint = function() {
   }
 };
 
-setTimeout(paint, 4);
+// setTimeout(paint, 4);
 // button.addEventListener("click", refresh, false);
