@@ -1,5 +1,21 @@
-.canvas-bg {
+.wrapper {
+  overflow: hidden;
+}
+
+.balloon {
   position: absolute;
+  z-index: -1;
+  border-radius: 700px;
+  filter: blur(40px);
+  background: rgba(89, 94, 255, 0.133);
+  animation: 9s linear 0s infinite normal forwards running floatOne;
+}
+
+.balloon-1 {
+  top: -130px;
+  left: -105px;
+  width: 800px;
+  height: 800px;
 }
 
 .container {
@@ -433,7 +449,6 @@
   margin: 0 20px;
 }
 
-
 @media (max-width: 767px) {
   .history .item {
     font-size: 15px;
@@ -446,7 +461,7 @@
   .history .sub-item {
     padding-left: 0px;
   }
-} 
+}
 
 @media (max-width: 575px) {
   .history .item {
@@ -479,7 +494,6 @@
     margin-right: 6px;
   }
 }
-
 
 .gallery-content {
   position: relative;
