@@ -246,15 +246,15 @@
 }
 
 .service-content .service-text {
-  width: 60%;
 }
 
 .service-content .service-img {
-  width: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .service-content .service-img-dovewallet {
-  height: 188px;
   width: 90%;
 }
 
@@ -263,14 +263,10 @@
     padding: 0px;
   }
 
-  .service-content .service-img-dovewallet {
-    width: 100%;
-  }
 }
 
 .service-content .service-img-miningpullhub {
   height: 135px;
-  margin-top: 30px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
 }
 
@@ -280,9 +276,6 @@
 
 .service-content .service-text-miningpullhub {
   width: 60%;
-}
-
-.service-content .miningpullhub {
 }
 
 .service-content .section-sub-miningpullhub {
@@ -300,15 +293,21 @@
   position: relative;
 }
 
-.section-miningpullhub {
+.service-content .section-miningpullhub {
+  margin-top: 40px;
 }
 
 @media (max-width: 991px) {
-  .service-content .miningpullhub {
+  .service-content .section-miningpullhub {
     flex-direction: column-reverse;
   }
-  .section-miningpullhub {
-    padding-top: 0px;
+
+  .service-content .service-img-dovewallet {
+    width: 75%;
+  }
+  
+  .service-content .service-img-miningpullhub {
+    height: 120px;
   }
 }
 
@@ -481,7 +480,6 @@
   .history .sub-date {
     padding-left: 0px;
   }
-  
 }
 
 @media (max-width: 575px) {
