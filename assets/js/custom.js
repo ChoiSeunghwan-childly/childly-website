@@ -16,9 +16,7 @@ $(document).ready(function() {
       "careers",
       "contact",
       "footer"
-    ],
-    afterLoad: paint,
-    lazyLoading: true
+    ]
   });
 });
 
@@ -72,33 +70,34 @@ function fibo(n) {
 
 // var button = document.getElementById("refresh");
 
-var paint = function() {
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
+// var paint = function() {
+//   var canvas = document.getElementById("canvas");
+//   var ctx = canvas.getContext("2d");
 
-  let height = document.body.scrollHeight;
-  let width = document.body.scrollWidth;
+//   let height = document.body.scrollHeight;
+//   // let width = document.body.scrollWidth;
+//   let width = 2400;
 
-  if (canvas.height === height) return;
-  canvas.height = height;
-  canvas.width = width;
-  ctx.clearRect(0, 0, width, height);
-  for (i = 0; i < 30; i++) {
-    var x = Math.floor(Math.random() * width);
-    var y = Math.floor(Math.random() * height);
-    var radius = Math.floor(Math.random() * 400);
+//   if (canvas.height === height) return;
+//   canvas.height = height;
+//   canvas.width = width;
+//   ctx.clearRect(0, 0, width, height);
+//   for (i = 0; i < 30; i++) {
+//     var x = Math.floor(Math.random() * width);
+//     var y = Math.floor(Math.random() * height);
+//     var radius = Math.floor(Math.random() * 400);
 
-    var r = Math.floor(Math.random() * 255);
-    var g = Math.floor(Math.random() * 255);
-    var b = Math.floor(Math.random() * 255);
+//     var r = Math.floor(Math.random() * 255);
+//     var g = Math.floor(Math.random() * 255);
+//     var b = Math.floor(Math.random() * 255);
 
-    ctx.beginPath();
-    ctx.arc(x, y, radius, Math.PI * 2, 0, false);
-    ctx.fillStyle = "rgba(" + r + "," + g + "," + b + ",1)";
-    ctx.fill();
-    ctx.closePath();
-  }
-};
+//     ctx.beginPath();
+//     ctx.arc(x, y, radius, Math.PI * 2, 0, false);
+//     ctx.fillStyle = "rgba(" + r + "," + g + "," + b + ",1)";
+//     ctx.fill();
+//     ctx.closePath();
+//   }
+// };
 
 // setTimeout(paint, 4);
 // button.addEventListener("click", refresh, false);
