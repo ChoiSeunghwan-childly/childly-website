@@ -57,7 +57,7 @@ function minigpoolhubMoreInfoToggle() {
   var element = document.getElementById("service-minigpoolhub-more-info");
   element.classList.toggle("show");
 
-  for (let i = 0; i < 40; i++) console.log(fibo(i));
+  // for (let i = 0; i < 40; i++) console.log(fibo(i));
   onBackModal();
 }
 

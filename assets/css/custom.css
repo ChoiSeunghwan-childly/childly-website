@@ -254,9 +254,21 @@
 }
 
 .service-content .service-img-dovewallet {
-  height: 120px;
-  width: 70%;
+  height: 188px;
+  width: 90%;
 }
+
+@media (max-width: 767px) {
+  .service-content .service-img {
+    padding: 0px;
+  }
+
+  .service-content .service-img-dovewallet {
+    width: 100%;
+  }
+}
+
+
 
 .service-content .service-img-miningpullhub {
   height: 120px;
