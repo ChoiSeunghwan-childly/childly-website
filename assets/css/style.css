@@ -5,6 +5,10 @@ body {
   overflow-x: hidden;
 }
 
+.footer {
+  margin-bottom: 20px;
+}
+
 .ko {
   font-family: "Spoqa Han Sans", "Sans-serif";
 }

@@ -1,28 +1,5 @@
-// $(document).ready(function() {
-//   $("#fullpage").fullpage({
-//     //options here
-//     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-//     autoScrolling: true,
-//     fitToSection: true,
-//     fitToSectionDelay: 700,
-//     scrollHorizontally: true,
-//     scrollBar: true,
-//     anchors: [
-//       "home",
-//       "service",
-//       "press",
-//       "history",
-//       "gallery",
-//       "careers",
-//       "contact",
-//       "footer"
-//     ]
-//   });
-// });
-
 window.addEventListener("scroll", progressBar);
 function progressBar() {
-  console.log('nhihi')
   var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
   var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
   var scrolled = (winScroll / height) * 100;
@@ -57,7 +34,6 @@ function subMenuToggle() {
   var navToggler = document.getElementById("navbar-toggler");
   element.classList.toggle("show");
   navToggler.classList.remove("active");
-  console.log('why?', navToggler.classList);
   onBackModal();
 }
 
