@@ -44,7 +44,6 @@ function subMenuToggle() {
   var navToggler = document.getElementById("navbar-toggler");
   element.classList.toggle("show");
   navToggler.classList.remove("active");
-  console.log('hello');
   onBackModal();
 }
 
@@ -57,12 +56,11 @@ function dovewalletMoreInfoToggle() {
 function minigpoolhubMoreInfoToggle() {
   var element = document.getElementById("service-minigpoolhub-more-info");
   element.classList.toggle("show");
-
-  // for (let i = 0; i < 40; i++) console.log(fibo(i));
   onBackModal();
 }
 
-function fibo(n) {
-  if (n <= 1) return 1;
-  else return fibo(n - 1) + fibo(n - 2);
+
+function careersMoreTextToggle() {
+  var element = document.getElementById("careers-more-text");
+  element.classList.toggle("show");
 }

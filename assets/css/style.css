@@ -617,6 +617,10 @@ p {
   padding-top: 50px;  
 }
 
+.footer-about {
+  width: 100%;
+}
+
 .footer-about .logo img {
   width: 160px;
 }

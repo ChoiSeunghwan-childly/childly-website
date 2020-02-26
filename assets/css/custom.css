@@ -138,9 +138,22 @@
 }
 
 .more {
+  cursor: pointer;
   width: 14px;
   margin: 15px auto 0px;
   display: flex;
+}
+
+.more-text {
+  visibility: hidden;
+  max-height: 0px;
+  transition: 0.7s;
+  overflow: hidden;
+}
+
+.more-text.show {
+  visibility: visible;
+  max-height: 500px;
 }
 
 .careers-content {
@@ -262,7 +275,6 @@
   .service-content .service-img {
     padding: 0px;
   }
-
 }
 
 .service-content .service-img-miningpullhub {
@@ -305,7 +317,7 @@
   .service-content .service-img-dovewallet {
     width: 75%;
   }
-  
+
   .service-content .service-img-miningpullhub {
     height: 120px;
   }
@@ -570,6 +582,23 @@
 
 .map-frame {
   text-align: center;
+}
+
+
+.footer .lang {
+  font-size: 12px;
+}
+
+.footer .logo {
+  margin-left: -6px;
+}
+
+.footer .lang-name {
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 3px;
+  padding: 1px 6px;
+  font-size: 11px;
+  margin-left: 4px;
 }
 
 .footer .information {
