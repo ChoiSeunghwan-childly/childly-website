@@ -147,7 +147,7 @@
 .more-text {
   visibility: hidden;
   max-height: 0px;
-  transition: 0.7s;
+  transition: 1s;
   overflow: hidden;
 }
 
@@ -389,6 +389,11 @@
   left: 94px;
   border-radius: 3px;
   margin-top: 14px;
+}
+
+.history .dot{
+  width: 10px;
+  height: 10px;
 }
 
 .history .list {

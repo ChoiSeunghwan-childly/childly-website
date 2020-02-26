@@ -35,6 +35,7 @@ button:focus {
 
 a:focus,
 a:hover {
+  color: #8eca19;
   text-decoration: none;
 }
 
@@ -625,61 +626,11 @@ p {
   width: 160px;
 }
 
-.footer-about .text {
-  line-height: 30px;
-  margin-top: 30px;
-}
-
-.footer-about .social {
-  margin-top: 40px;
-}
-.footer-about .social li {
-  display: inline-block;
-  margin-right: 30px;
-}
-.footer-about .social li a {
-  font-size: 22px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-.footer-about .social li a:hover {
-  color: #fe8464;
-}
-
 .footer-title .title {
   font-size: 24px;
   font-weight: 700;
 }
 
-.link-wrapper {
-  padding: 0 35px;
-}
-@media (max-width: 767px) {
-  .link-wrapper {
-    padding: 0;
-    padding-right: 50px;
-  }
-}
-.link-wrapper .link {
-  padding-top: 20px;
-}
-.link-wrapper .link li {
-  margin-top: 20px;
-}
-.link-wrapper .link li a {
-  font-size: 16px;
-  -webkit-transition: all 0.3s ease-out 0s;
-  -moz-transition: all 0.3s ease-out 0s;
-  -ms-transition: all 0.3s ease-out 0s;
-  -o-transition: all 0.3s ease-out 0s;
-  transition: all 0.3s ease-out 0s;
-}
-.link-wrapper .link li a:hover {
-  color: #fe8464;
-}
 
 .back-to-top {
   font-size: 20px;
