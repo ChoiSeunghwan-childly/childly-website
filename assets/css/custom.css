@@ -3,13 +3,14 @@ html {
 }
 
 .wrapper {
+  position: relative;
   overflow: hidden;
 }
 
 .balloon {
   position: absolute;
   z-index: -1;
-  border-radius: 700px;
+  border-radius: 50%;
   filter: blur(40px);
   background: rgba(89, 94, 255, 0.133);
   animation: 9s linear 0s infinite normal forwards running floatOne;
@@ -20,6 +21,13 @@ html {
   left: -105px;
   width: 800px;
   height: 800px;
+}
+
+@media (max-width: 757px) {
+  .balloon-1 {
+    width: 500px;
+    height: 500px;
+  }
 }
 
 .section {
