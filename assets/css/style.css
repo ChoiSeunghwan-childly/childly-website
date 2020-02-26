@@ -245,6 +245,10 @@ p {
   display: none;
 }
 
+.sticky .sub-menu-bar {
+  background-color: #fff;
+}
+
 .sub-menu-bar.show {
   display: unset;
 }

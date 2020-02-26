@@ -32,14 +32,17 @@ function progressBar() {
 
 function onClickBackModal() {
   var modalElement = document.getElementById("back-modal");
-  var element1 = document.getElementById("service-minigpoolhub-more-info");
-  var element2 = document.getElementById("service-dovewallet-more-info");
+  var element1 = document.getElementById("service-minigpoolhub-more-text");
+  var element2 = document.getElementById("service-dovewallet-more-text");
   var element3 = document.getElementById("sub-menu-bar");
+  var element4 = document.getElementById("careers-more-text");
+  
   var navToggler = document.getElementById("navbar-toggler");
 
   element1.classList.remove("show");
   element2.classList.remove("show");
   element3.classList.remove("show");
+  element4.classList.remove("show");
   modalElement.classList.remove("on");
   navToggler.classList.remove("active");
 }
@@ -54,17 +57,18 @@ function subMenuToggle() {
   var navToggler = document.getElementById("navbar-toggler");
   element.classList.toggle("show");
   navToggler.classList.remove("active");
+  console.log('why?', navToggler.classList);
   onBackModal();
 }
 
-function dovewalletMoreInfoToggle() {
-  var element = document.getElementById("service-dovewallet-more-info");
+function dovewalletMoreTextToggle() {
+  var element = document.getElementById("service-dovewallet-more-text");
   element.classList.toggle("show");
   onBackModal();
 }
 
-function minigpoolhubMoreInfoToggle() {
-  var element = document.getElementById("service-minigpoolhub-more-info");
+function minigpoolhubMoreTextToggle() {
+  var element = document.getElementById("service-minigpoolhub-more-text");
   element.classList.toggle("show");
   onBackModal();
 }
@@ -73,4 +77,5 @@ function minigpoolhubMoreInfoToggle() {
 function careersMoreTextToggle() {
   var element = document.getElementById("careers-more-text");
   element.classList.toggle("show");
+  onBackModal();
 }

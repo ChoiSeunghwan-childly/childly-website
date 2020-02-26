@@ -85,8 +85,9 @@
       </div>
     </header>
  
-    <div id="fullpage" class="wrapper">
-      <section class="home banner">
+    <!-- <div id="fullpage" class="wrapper"> -->
+    <div class="wrapper"></div>
+      <section id="home" class="home banner">
         <span class="balloon balloon-1"></span>
         <div class="container center">
           <div class="text-center">
@@ -101,7 +102,7 @@
         </div>
       </section>
 
-      <section class="service section service-content">
+      <section id="service" class="service section service-content">
         <div class="heading">
           <h3 class="heading-text">
             Service
@@ -136,17 +137,17 @@
                       </h3>
                       <p class="text"></p>
                     </div>
-                    <!-- <div>
+                    <div>
                       <a
                         class="more"
-                        onclick="dovewalletMoreInfoToggle()"
+                        onclick="dovewalletMoreTextToggle()"
                         ><img src="assets/images/more.svg" alt="more"
                       /></a>
-                    </div> -->
+                    </div>
                   </div>
                 </div>
 
-                <div class="more-info" id="service-dovewallet-more-info">
+                <div class="more-text" id="service-dovewallet-more-text">
                   <div class="more-info-frame">
                     <p>
                       As the cryptocurrency adoption for the New Economy keeps
@@ -175,12 +176,14 @@
                         contribution equally.
                       </span>
                     </h3>
-                    <!-- <a
+                    <div>
+                    <a
                       class="more"
-                      onclick="minigpoolhubMoreInfoToggle()"
+                      onclick="minigpoolhubMoreTextToggle()"
                       ><img src="assets/images/more.svg" alt="more"
-                    /></a> -->
-                    <div class="more-info" id="service-minigpoolhub-more-info">
+                    /></a>
+                  </div>
+                    <div class="more-text" id="service-minigpoolhub-more-text">
                       <div class="more-info-frame">
                         <p>
                           Since its global launch in 2014, Mining Pool Hub has
@@ -225,7 +228,7 @@
         </div>
       </section>
 
-      <section class="press press-content section">
+      <section id="press" class="press press-content section">
         <div class="section-wrapper">
           <div class="heading">
             <h3 class="heading-text">
@@ -271,7 +274,7 @@
         </div>
       </section>
 
-      <section class="history history-section history section">
+      <section id="history" class="history history-section history section">
         <div class="section-wrapper">
           <div class="heading">
             <h3 class="heading-text">
@@ -369,7 +372,7 @@
         </div>
       </section>
 
-      <section class="gallery gallery-content section">
+      <section id="gallery" class="gallery gallery-content section">
         <div class="section-wrapper">
           <div class="container">
             <div class="grid">
@@ -406,7 +409,7 @@
         </div>
       </section>
 
-      <section class="careers careers-content section">
+      <section id="careers" class="careers careers-content section">
         <div class="section-wrapper">
           <div class="heading">
             <h3 class="heading-text">
@@ -440,7 +443,9 @@
                 /></a>
               </div> 
               <div id="careers-more-text" class="more-text">
+                <div class="more-info-frame">
                 If you’re a person with self-growth aspiration and curiosity, who finds learning is utterly fun and embrace new challenges with strong sense of responsibility & confidence, please check out here for new opportunities at Childly.
+              </div>
               </div>
             </div>
             <div class="apply-frame">
@@ -450,7 +455,7 @@
         </div>
       </section>
 
-      <section class="contact contact-content section">
+      <section id="contact" class="contact contact-content section">
         <div class="section-wrapper">
           <div class="heading">
             <h3 class="heading-text">
@@ -468,7 +473,8 @@
           </div>
         </div>
       </section>
-      <footer class="footer fp-auto-height">
+
+      <footer id="footer" class="footer fp-auto-height">
         <span class="balloon balloon-1"></span>
         <div class="container">
           <div class="footer-widget pb-70">

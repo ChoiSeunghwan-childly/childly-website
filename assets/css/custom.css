@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .wrapper {
   overflow: hidden;
 }
@@ -176,13 +180,14 @@
 .more-text {
   visibility: hidden;
   max-height: 0px;
-  transition: 1s;
+  transition: 1s linear;
   overflow: hidden;
 }
 
 .more-text.show {
   visibility: visible;
   max-height: 500px;
+  padding-bottom: 30px;
 }
 
 .careers-content {
@@ -361,6 +366,12 @@
   position: relative;
   display: block;
   text-align: center;
+}
+
+@media (max-width: 575px) {
+  .heading {
+    margin-top: 100px;
+  }
 }
 
 .heading .text {
@@ -609,7 +620,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  z-index: 30;
+  z-index: 999;
   pointer-events: none;
 }
 
