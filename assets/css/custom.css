@@ -18,12 +18,46 @@
   height: 800px;
 }
 
+.section {
+  position: relative;
+}
+
+.progress-container {
+  z-index: 100;
+  width: 100%;
+  height: 6px;
+  position: fixed;
+  top: 0;
+}
+
+.progress-bar {
+  height: 6px;
+  width: 0%;
+  background-color: #8eca19;
+}
+
 .container {
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+}
+
+.section .container {
+  margin: 200px auto;
+}
+
+@media (max-width: 767px) {
+  .section .container {
+    margin: 100px auto;
+  }
+}
+
+@media (max-width: 575px) {
+  .section .container {
+    margin: 50px auto;
+  }
 }
 
 .col-3 {
@@ -91,11 +125,6 @@
 }
 
 .section-wrapper {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
 }
 
 .next-btn {
@@ -305,6 +334,11 @@
   position: relative;
 }
 
+.press-content .setction-wrapper {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
 .service-content .section-miningpullhub {
   margin-top: 40px;
 }
@@ -324,11 +358,9 @@
 }
 
 .heading {
-  position: absolute;
+  position: relative;
   display: block;
   text-align: center;
-  top: 70px;
-  width: 100%;
 }
 
 .heading .text {
@@ -391,7 +423,7 @@
   margin-top: 14px;
 }
 
-.history .dot{
+.history .dot {
   width: 10px;
   height: 10px;
 }
@@ -588,7 +620,6 @@
 .map-frame {
   text-align: center;
 }
-
 
 .footer .lang {
   font-size: 12px;

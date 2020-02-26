@@ -1,24 +1,34 @@
-$(document).ready(function() {
-  $("#fullpage").fullpage({
-    //options here
-    licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
-    autoScrolling: true,
-    fitToSection: true,
-    fitToSectionDelay: 700,
-    scrollHorizontally: true,
-    scrollBar: true,
-    anchors: [
-      "home",
-      "service",
-      "press",
-      "history",
-      "gallery",
-      "careers",
-      "contact",
-      "footer"
-    ]
-  });
-});
+// $(document).ready(function() {
+//   $("#fullpage").fullpage({
+//     //options here
+//     licenseKey: "OPEN-SOURCE-GPLV3-LICENSE",
+//     autoScrolling: true,
+//     fitToSection: true,
+//     fitToSectionDelay: 700,
+//     scrollHorizontally: true,
+//     scrollBar: true,
+//     anchors: [
+//       "home",
+//       "service",
+//       "press",
+//       "history",
+//       "gallery",
+//       "careers",
+//       "contact",
+//       "footer"
+//     ]
+//   });
+// });
+
+window.addEventListener("scroll", progressBar);
+function progressBar() {
+  console.log('nhihi')
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById('progress-bar').style.width = scrolled + "%";
+  
+}
 
 function onClickBackModal() {
   var modalElement = document.getElementById("back-modal");
